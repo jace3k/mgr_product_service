@@ -5,6 +5,11 @@ class ProductsController < ApplicationController
   end
 
   def show
+    product = Product.find(params[:id])
+    render json: { data: product }
+  end
+
+  def create
     product = Product.new(permit_params)
     if product.save
       render json: { data: product }, status: :ok
