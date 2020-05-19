@@ -12,7 +12,7 @@ electronics = (1..300).map { |id|
   {
     name: Faker::Appliance.equipment,
     category: "Electronics",
-    price: rand(50.5..10000.0).round(2),
+    price: 50505.55,
   }
 }
 
@@ -20,7 +20,7 @@ food = (1..300).map { |id|
   {
     name: Faker::Food.dish,
     category: "Food",
-    price: rand(1.5..500.0).round(2),
+    price: 555.55,
   }
 }
 
@@ -28,7 +28,7 @@ beer = (1..300).map { |id|
   {
     name: Faker::Beer.name,
     category: "Beer",
-    price: rand(1.5..50.0).round(2),
+    price: 5.55,
   }
 }
 
@@ -36,7 +36,7 @@ furnitures = (1..100).map { |id|
   {
     name: Faker::House.furniture,
     category: "Furnitures",
-    price: rand(300.5..50000.0).round(2),
+    price: 55555.55,
   }
 }
 
